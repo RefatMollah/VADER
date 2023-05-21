@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri May 19 10:52:43 2023
+# Process ID: 21708
+# Current directory: C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.runs/synth_1
+# Command line: vivado.exe -log sha256.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sha256.tcl
+# Log file: C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.runs/synth_1/sha256.vds
+# Journal file: C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.runs/synth_1\vivado.jou
+# Running On: LAPTOP-6H8105HT, OS: Windows, CPU Frequency: 2894 MHz, CPU Physical cores: 16, Host memory: 7916 MB
+#-----------------------------------------------------------
+source sha256.tcl -notrace

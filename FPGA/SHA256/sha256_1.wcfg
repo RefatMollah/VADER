@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sha256_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sha256" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="49.101 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="96"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_sha256/digest" type="array">
+      <obj_property name="ElementShortName">digest[255:0]</obj_property>
+      <obj_property name="ObjectShortName">digest[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sha256/message" type="array">
+      <obj_property name="ElementShortName">message[79:0]</obj_property>
+      <obj_property name="ObjectShortName">message[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sha256/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sha256/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sha256/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sha256/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sha256/sh/round" type="array">
+      <obj_property name="ElementShortName">round[5:0]</obj_property>
+      <obj_property name="ObjectShortName">round[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sha256/sh/wOut" type="array">
+      <obj_property name="ElementShortName">wOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wOut[31:0]</obj_property>
+   </wvobject>
+</wave_config>

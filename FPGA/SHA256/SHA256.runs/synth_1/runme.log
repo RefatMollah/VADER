@@ -1,0 +1,414 @@
+
+*** Running vivado
+    with args -log sha256.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sha256.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source sha256.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 395.816 ; gain = 64.121
+Command: read_checkpoint -auto_incremental -incremental C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/utils_1/imports/synth_1/sha256.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/utils_1/imports/synth_1/sha256.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top sha256 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28836
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Programs/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 837.434 ; gain = 404.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sha256' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:23]
+INFO: [Synth 8-6157] synthesizing module 'kValues' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/kValues.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'kValues' (0#1) [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/kValues.v:21]
+INFO: [Synth 8-6157] synthesizing module 'scheduling' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/scheduling.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'scheduling' (0#1) [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/scheduling.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hashing' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/hashing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hashing' (0#1) [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/hashing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sha256' (0#1) [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:23]
+WARNING: [Synth 8-3848] Net resetH in module/entity sha256 does not have driver. [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:46]
+WARNING: [Synth 8-7129] Port clk in module hashing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module hashing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module scheduling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable in module sha256 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1174.492 ; gain = 742.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1174.492 ; gain = 742.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1174.492 ; gain = 742.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1280.043 ; gain = 847.570
+---------------------------------------------------------------------------------
+sha256__GB5sha256__GB4sha256__GB3sha256__GB2sha256__GB1---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1462.879 ; gain = 1030.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1496.422 ; gain = 1063.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1504.152 ; gain = 1071.680
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++-+----------------+------------+----------+----------+
+| |Changed Modules |Replication |Instances |Changed % |
++-+----------------+------------+----------+----------+
++-+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 178339
+   Resynthesis Design Size (number of cells) : 65504
+   Resynth % : 36.7300,  Reuse % : 63.2700
+
+3. Reference Checkpoint Information
+
++----------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/utils_1/imports/synth_1/sha256.dcp |
++----------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2022.2 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |muxpart__278_sha256 |           1|     65504|
+|2     |sha256__GB1_#REUSE# |           1|         0|
+|3     |sha256__GB2_#REUSE# |           1|         0|
+|4     |sha256__GB3_#REUSE# |           1|         0|
+|5     |sha256__GB4_#REUSE# |           1|         0|
+|6     |sha256__GB5_#REUSE# |           1|         0|
++------+--------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port enable in module sha256 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1518.520 ; gain = 1086.047
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+WARNING: [Synth 8-6893] IncrSyn ConnManager: unexpected null instance found
+INFO: [Common 17-14] Message 'Synth 8-6893' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1531.590 ; gain = 1099.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1536.559 ; gain = 1104.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:01:42 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:36 ; elapsed = 00:01:43 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance kRound_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance kRound_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:02:00 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:02:00 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[6] with 1st driver pin 'round_reg[6]__0/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[6] with 2nd driver pin 'round_reg[6]/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:96]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[5] with 1st driver pin 'round_reg[5]__0/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[5] with 2nd driver pin 'round_reg[5]/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:96]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[4] with 1st driver pin 'round_reg[4]__0/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[4] with 2nd driver pin 'round_reg[4]/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:96]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[3] with 1st driver pin 'round_reg[3]/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:96]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[3] with 2nd driver pin 'round_reg[3]__0/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[2] with 1st driver pin 'round_reg[2]/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:96]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[2] with 2nd driver pin 'round_reg[2]__0/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[1] with 1st driver pin 'round_reg[1]/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:96]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[1] with 2nd driver pin 'round_reg[1]__0/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[0] with 1st driver pin 'round_reg[0]/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:96]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin round[0] with 2nd driver pin 'round_reg[0]__0/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin wEn with 1st driver pin 'wEn_reg__0/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin wEn with 2nd driver pin 'wEn_reg/Q' [C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.srcs/sources_1/new/sha256.v:97]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        8|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:02:01 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:02:01 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:02:02 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:02:03 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   104|
+|3     |LUT1     |   137|
+|4     |LUT2     |    97|
+|5     |LUT3     |  4186|
+|6     |LUT4     |  4234|
+|7     |LUT5     |   412|
+|8     |LUT6     |  6514|
+|9     |MUXF7    |  2528|
+|10    |MUXF8    |   832|
+|11    |RAMB18E1 |     1|
+|12    |FDRE     |  4687|
+|13    |FDSE     |   138|
+|14    |LD       |    40|
+|15    |IBUF     |    82|
+|16    |OBUF     |   257|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           | 24251|
+|2     |  sh     |scheduling |   590|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:02:03 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 16 critical warnings and 1736 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:02:14 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:02:14 . Memory (MB): peak = 1556.078 ; gain = 1123.605
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.391 . Memory (MB): peak = 1556.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3505 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'sha256' is not ideal for floorplanning, since the cellview 'sha256' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1556.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 40 instances were transformed.
+  LD => LDCE: 40 instances
+
+Synth Design complete, checksum: 646718f3
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 109 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:02:45 . Memory (MB): peak = 1556.988 ; gain = 1132.434
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/refat/Documents/HPES/YODA/FPGA/SHA256/SHA256.runs/synth_1/sha256.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1556.988 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file sha256_utilization_synth.rpt -pb sha256_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 19 10:55:50 2023...
